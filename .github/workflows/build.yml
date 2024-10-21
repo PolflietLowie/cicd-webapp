@@ -22,3 +22,10 @@ jobs:
 
       - name: Lint code
         run: yarn lint
+
+      - name: Build Docker image
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: Dockerfile
+          tags: lowiepolfliet/webapp:latest
