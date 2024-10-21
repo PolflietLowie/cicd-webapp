@@ -52,7 +52,7 @@ persistence
     });
   })
   .catch((err) => {
-    console.error('Database failed to connect, check the error below');
+    console.error('Database failed to connect, check the error below:');
     console.error(err);
     process.exit(1);
   });
